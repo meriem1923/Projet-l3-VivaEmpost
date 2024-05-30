@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}  
+ 
+ul, li {  /* Reset default list styles */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 220svh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.159), rgba(0, 0, 0, 0.153)),url('vivamall4.jpg');
+    background-size: cover;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    
+}
+
+h1 {
+    font-size: 90px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(255, 218, 218);
+    text-shadow: 3px 3px 4px rgb(143, 127, 127);
+    position: relative;
+    top: 35px;
+}
+
+.title {
+    position: relative;
+    height: 50px; /* Hauteur fixe */
+    opacity: 1;
+    transition: opacity 1s ease; /* Transition d'opacité */
+    animation-delay: 2s;
+}
+/* Style the header */
+.header {
+    background-color: transparent;
+    background-size: auto; /* Set the desired size */
+    background-repeat: no-repeat;
+    height: 63px;
+    text-align: center;
+}
+
+.logo img {
+    position: relative;
+    display: flex;
+    width: 80px; /* Adjust as needed */
+    height: 70px;
+    top: -3px;
+}
+
+.menu {
+    display: inline-flex;
+    float: right;
+    justify-content: space-between;
+    font-size: 2.2ch;
+    font-style: italic;
+    margin: 0; /* Center the entire navigation bar */
+    text-align: center;
+    position: absolute;
+    top: 6%;
+    left: 35%;
+    
+}
+
+.menu li {
+    display: inline-block; /* Display the list items horizontally */
+    vertical-align: top;
+    margin-right: 50px;
+    margin-block: -7px;
+    top: 0%;
+    color: #F0F0F0;
+}
+
+.menu a {
+    color: #fe7777;
+    position: relative;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: rgba(232, 236, 236, 0.865); /* Change to your desired hover color */
+}
+
+/* Style the submenu */
+.menu .sousmenu {
+    display: block;
+    list-style-type:none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.963);
+    border-radius: 40px;
+    margin-top: 12px;
+    width: 250px;
+    height: 200;
+}
+
+.menu .sousmenu li {
+    display: block;
+    float: none;
+    margin: 5px;
+    margin-top: 10px;
+    padding: 0;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: 40px;
+}
+
+.menu .sousmenu li a:link, .menu li a:visited {
+    display: block;
+    font-size: 1.09rem;
+    color: #000;
+    text-decoration: none;
+    background-color:transparent;
+}
+
+.menu .sousmenu li a:hover {
+    background-color:rgb(255, 255, 255); /* Couleur du texte */
+    color: rgb(0, 94, 255);
+    border-radius: 40px;
+    width: 180px;
+    
+}
+
+.menu li:hover .sousmenu {
+    display: block;
+}
+
+.menu input[type="text"] {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    padding: 6px;
+    border: none;
+    margin-right: 27px;
+    margin-left: 38px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    border-radius: 30px;
+    height: 38px;
+    width: 215px;
+    position:absolute;
+    top: -16px;
+    left: 74%;
+}
+.menu input[type="text"]:focus{
+    box-shadow: rgb(60, 149, 250);
+    border-color: rgb(0, 81, 255);
+}
+
+.menu button[type="reset"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 81, 255);
+    border:solid #b5defc 0.5px;
+    border-radius: 50px;
+    box-shadow: rgb(130, 182, 243);
+    width: 50px;
+    margin-right: 2px;
+    height:  35px;
+    position: relative;
+    top: -8px;
+    left: 200px;
+}
+
+.material-symbols-outlined{
+    align-self: center;
+    justify-self:center;
+    position: absolute;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+
+.menu button:hover{
+    background-color: #ffffff;
+    color: rgb(0, 81, 255);
+}
+
+.content {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 25px;
+    line-height: 1.8;
+    font-size: 1rem;
+    text-align:left;
+    position:fixed;
+    background-color:transparent;
+    backdrop-filter: blur(36px);
+    width: 700px;
+    height: 200px;
+    color: rgb(255, 255, 255);
+    left: 20%;
+    top: 230px;
+    margin-top: 150px;
+    position:absolute;
+    border: 2px solid #485050; /* Set your desired border style */
+    border-radius: 10px 40px;
+    border: 1px solid #3a4343; /* Some kind of blue border */
+    border-radius: 7px; /* Round the corners */
+    box-shadow: 30px 30px 30px #3f4c4dc1;
+    
+}
+
+.container {
+    text-align: center;
+    background-color:transparent;
+    backdrop-filter: blur(30px);
+    width: 450px;
+    height: 450px;
+    color: black;
+    left: 25%;
+    top:  690px;
+    margin-left: 80px;
+    margin-right: 30px;
+    margin-bottom: 100px; /* Increase this value to create more space */
+    margin-top: 10px;
+    position: absolute;
+    border: 1px solid #000000d3;
+    border-radius: 7px;
+    box-shadow: 30px 30px 30px #6ea7f15f;
+}
+
+
+h3{
+    position:absolute; 
+    top:10%;
+    left: 125px;
+    font-size:34px;
+    color:rgb(0, 0, 0);
+    font-style: italic ;
+    text-decoration:underline;
+}
+
+
+.input-group {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom:  2px solid #000;
+    top: 120%;
+}
+
+.input-group {
+    margin: 30px 0;
+    position:relative;
+    top:90px;
+    left: 90px;
+    border-bottom:  2px solid #000;
+}
+
+.input-group label {
+    position: absolute;
+    top: 40%;/*Bah nethakmou fi irtifa3 elazem label input*/
+    left: 30px;
+    transform: translateY(-50%);
+    color: #000000;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+input:focus ~ label, 
+input:valid ~ label {
+    top: -5px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #000;
+}
+
+.input-group ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    top: 200px;
+}
+
+.forget {
+    margin: 35px 0;
+    font-size: 0.85rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.forget label {
+    display: flex;
+    align-items: left;
+}
+.forget label {
+    position:absolute;
+    left: 900px;
+}
+
+.forget label input {
+    margin-right: 3px;
+}
+
+.forget a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forget a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 50%;
+    height: 45px;
+    border-radius: 40px;
+    background-color: rgb(14, 96, 248);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color:#FFF;
+    transition: all 0.4s ease;
+    position:absolute;
+    top:70%;
+    left: 125px;
+}
+
+button:hover {
+  background-color: rgb(255, 255,255, 0.5);
+}
+
+.remember {
+    font-size: 0.9rem;
+    color: #000;
+    text-align: center;
+}
+
+.remember p a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.remember p a:hover {
+    text-decoration: underline;
+}
+
+
+.remember{
+    position:relative;
+    top: 170px;
+    left: 10px;
+    
+
+}
+sign-in label{
+    position:absolute;
+    left: 500px;
+    top:50%;
+}
+
+
+
+footer {
+	position: absolute;
+    top: 210svh;
+    width: 100%;
+	background-color: #082251bb;
+	color: #fff;
+	padding: 1rem;
+    height: 120px;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content:center; /* Horizontally center the icons */
+    margin-right: 30px;
+    position: relative;
+    top : 10px;
+}
+
+.social-icons a {
+    margin: 0 20px; /* Add some spacing between icons */
+    width: 30px;
+}
+
+.contacter{
+    color: whitesmoke ;
+    font-size: 20px;
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}

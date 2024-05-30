@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form-post.css">
+    <title>Formulaire de Poste</title>
+</head>
+
+<body>
+    <div class="container">
+        <a href="indexmod.php"><span class="material-symbols-outlined"></span>OK</a>
+        <h2>inserer</h2>
+        <form action="" method="POST">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="Titre" id="Titre" required>
+                    <div class="underline"></div>
+                    <label for="">Titre</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="Sallaire" id="Sallaire" required>
+                    <div class="underline"></div>
+                    <label for="">Sallaire</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="Heure" id="Heure" required>
+                    <div class="underline"></div>
+                    <label for="">Heure</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="Competence" id="Competence" required>
+                    <div class="underline"></div>
+                    <label for="">Competence</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="Diplome" id="Diplome" required>
+                    <div class="underline"></div>
+                    <label for="">Diplome</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="experience" id="experience" required>
+                    <div class="underline"></div>
+                    <label for="">experience</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="Sexe" id="Sexe" required>
+                    <div class="underline"></div>
+                    <label for="">Sexe</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="Taille" id="Taille" required>
+                    <div class="underline"></div>
+                    <label for="">Taille</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="Age" id="Age" required>
+                    <div class="underline"></div>
+                    <label for="">Age</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="Type_contrat" id="Type_contrat" required>
+                    <div class="underline"></div>
+                    <label for="">Type contract</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+
+               <div class="input-data">
+                  <input type="Date" name="Date" id="Date" required>
+                   <div class="underline"></div>
+                 
+             </div>   
+
+             <div class="input-data">
+                  <input type="text" name="Categories" id="Categories" required>
+                   <div class="underline"></div>
+                  <label for="">categories</label>
+             </div>
+               </div>
+
+          
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <textarea name="Description" rows="8" cols="80" required></textarea>
+                    <br />
+                    <div class="underline"></div>
+                    <label for="Description">Description</label>
+                    <br />
+                    <div class="form-row submit-btn" style="margin-bottom: 10px;">
+
+                       <div class="input-data">
+                         <div class="inner"></div>
+                            <input type="submit" value="Submit" name="Submit" onclick="indexmod.php">  
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

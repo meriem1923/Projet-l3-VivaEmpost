@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="logentre.php"><img src="logoviva.png" alt="Logo de mon site"></a>
+        </div>
+        <ul class="menu">
+            <li><a href="pagehome.php">Accueil</a></li>
+            <li><a href="poste.html">Postes</a></li>
+            <li><a href="form-emp.php">Inscription</a></li>
+            <li><a href="aboutus.html">A propos</a></li>
+        </ul>
+    </header>
+    
+    <section class="about">
+        <h1>À propos de Viva Emposte</h1>
+        <div class="about-info">
+            <div class="about-img">
+                <img src="logoviva.png" alt="Logo de mon site">
+            </div>
+            <div classe="home">
+                <div id="animated-text" class="content"></div>
+                    <script>
+                        const phrases = [
+                            "Notre plateforme joue un rôle crucial dans le processus de recrutement et de recherche d'emploi. Elle facilite la recherche d'emploi en permettant aux chercheurs de trouver des postes correspondant à leurs compétences, tout en aidant les entreprises à trouver des candidats qualifiés. De plus, notre site offre aux employeurs la possibilité de consulter gratuitement des CV et de les présenter aux entreprises. En outre, il permet aux entreprises de publier leurs offres d'emploi avec toutes les conditions requises."
+                        ];
+                        let currentPhraseIndex = 0;
+                        let currentCharIndex = 0;
+                        const textElement = document.getElementById("animated-text");
+                
+                        function displayNextCharacter() {
+                            if (currentCharIndex < phrases[currentPhraseIndex].length) {
+                                const currentPhrase = phrases[currentPhraseIndex];
+                                textElement.textContent += currentPhrase[currentCharIndex];
+                                currentCharIndex++;
+                                setTimeout(displayNextCharacter, 80); // Increase the delay here (e.g., 80 milliseconds)
+                            } else {
+                                // Move to the next phrase
+                                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+                                currentCharIndex = 0;
+                                setTimeout(displayNextCharacter, 10);
+                                textElement.textContent = ""; // Clear the text
+                                setTimeout(displayNextCharacter, 200000); // Delay between phrases (e.g., 2000 milliseconds)
+                            }
+                        }
+                
+                        // Start the animation
+                        displayNextCharacter();
+                    </script>
+            </div>
+        </div>
+    </section>
+
+    <section>
+    <div class="content1">
+        <p>
+            Viva Mall à Annaba, en Algérie, offre un mélange captivant de vente au détail, de divertissement et de délices culinaires sous un toit spacieux. Le centre commercial propose un large éventail de marques nationales et internationales, offrant une expérience de magasinage inégalée pour tout le monde.
+        </p>
+            <div class="image-link-container">
+        <a href="https://maps.app.goo.gl/H4HA5cxuRLz26ynn7" target="_blank">
+            <img src="map.jpg" alt="Description of the image" class="image-link">
+        </a>
+    </div>
+    </section>
+
+    <footer>
+        <p class="copy" style="font-size: 18px; font-weight: bold;">&copy; 2024 Viva Emploi</p>
+        <p class="contacter">Contacter Nous sur </p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/VivaMallannaba/?locale=fr_FR"><img src="facebook.png" alt="Facebook icon" style="width: 40px; height: 40px;"/></a>
+            <a href="https://www.instagram.com/vivamall23/?hl=fr"><img src="instagram.png" alt="Twitter icon" style="width: 45px; height: 45px;"/></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fvivaopenmall"><img src="twitter2.png" alt="Instagram icon" style="width: 40px; height: 40px;"/></a>
+        </div>
+
+    </footer>
+</body>
+</html>
